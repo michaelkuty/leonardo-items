@@ -1,0 +1,31 @@
+{% load i18n %}
+
+<a href="{{ item.url }}" target="_blank">
+	<h3>{{ item.title }}</h3>
+</a>
+
+<div class="valignContainer row-sm-11 text-center">
+    <div class="centered">
+    	<a href="{{ item.url }}">
+		{% include "widget/simpleimage/_image.html" with image=item.image size="340x340" %}
+    	</a>
+	</div>
+</div>
+
+<table class="table">
+<tbody>
+{% for attr in item.attributes.all %}
+  <tr class="{% cycle 'even' 'odd' %}">
+      <td> <b>{{ attr.attribute.title }}</b> </td> <td> {{ attr.value }} </td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+
+<div class="container">
+{% if item.short_description %}
+<span>{{ item.short_description }}</span>
+{% endif %}
+</div>
+
+<span class="pull-right"><strong>{{ item.price }} {% trans "Kč" %}</strong></span>
