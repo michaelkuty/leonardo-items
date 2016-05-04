@@ -33,7 +33,7 @@ class Item(models.Model):
         verbose_name_plural = _('items')
 
     def __str__(self):
-        return self.title
+        return '%s' % self.title
 
 FIELD_TYPES = utils.get_object(settings.LEONARDO_ITEMS_FIELD_TYPES)
 
@@ -67,7 +67,7 @@ class Attribute(models.Model):
         verbose_name_plural = _('item attributes')
 
     def __str__(self):
-        return self.title
+        return '%s' % self.title
 
     def get_choices(self):
         get_tuple = lambda value: (slugify(value.strip()), value.strip())
