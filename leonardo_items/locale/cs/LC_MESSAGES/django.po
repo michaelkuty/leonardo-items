@@ -16,67 +16,67 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: __init__.py:28
 msgid "Item Invertory"
-msgstr ""
+msgstr "Seznam aut"
 
 #: default_field_types.py:8 fields.py:8
 msgid "text"
-msgstr "Text"
+msgstr ""
 
 #: default_field_types.py:9 fields.py:9
 msgid "e-mail address"
-msgstr "E-Mail-Adresse"
+msgstr "emailová adresa"
 
 #: default_field_types.py:10 fields.py:10
 msgid "integer"
-msgstr ""
+msgstr "číslo"
 
 #: default_field_types.py:11 fields.py:11
 msgid "boolan True / False"
-msgstr ""
+msgstr "Ano/Ne"
 
 #: default_field_types.py:12 fields.py:12
 msgid "float"
-msgstr ""
+msgstr "číslo s desetinou čárkou"
 
 #: default_field_types.py:13 fields.py:13
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: default_field_types.py:17 fields.py:17
 msgid "long text"
-msgstr "Langer Text"
+msgstr "dlouhý text"
 
 #: default_field_types.py:21 fields.py:21
 msgid "checkbox"
-msgstr "Checkbox"
+msgstr ""
 
 #: default_field_types.py:25 fields.py:25
 msgid "select"
-msgstr "Auswahlbox"
+msgstr ""
 
 #: default_field_types.py:29 fields.py:29
 msgid "radio"
-msgstr "Auswahl (Radiobuttons)"
+msgstr ""
 
 #: default_field_types.py:33 fields.py:33
 msgid "multiple select"
-msgstr "Mehrfachauswahl"
+msgstr ""
 
 #: default_field_types.py:37 fields.py:37
 msgid "hidden"
-msgstr "versteckt"
+msgstr ""
 
 #: default_field_types.py:41 fields.py:41
 msgid "File"
-msgstr ""
+msgstr "Soubor"
 
 #: default_field_types.py:44 fields.py:44
 msgid "Image"
-msgstr ""
+msgstr "Obrázek"
 
 #: default_field_types.py:57 fields.py:57
 msgid "recaptcha"
@@ -84,91 +84,87 @@ msgstr ""
 
 #: models.py:22 models.py:50
 msgid "title"
-msgstr "Titel"
+msgstr "název"
 
 #: models.py:24
 msgid "short description"
-msgstr ""
+msgstr "krátký popis"
 
 #: models.py:27
 msgid "price"
-msgstr ""
+msgstr "cena"
 
 #: models.py:28 widget/itemlist/models.py:12
 msgid "sold"
-msgstr ""
+msgstr "prodáno"
 
 #: models.py:29 widget/itemlist/models.py:13
 msgid "featured"
-msgstr ""
+msgstr "doporučený"
 
 #: models.py:32 models.py:102 models.py:104
 msgid "item"
-msgstr ""
+msgstr "auto"
 
 #: models.py:33
 msgid "items"
-msgstr ""
+msgstr "auta"
 
 #: models.py:49
 msgid "ordering"
-msgstr "Sortierung"
+msgstr "pořadí"
 
 #: models.py:51
 msgid "name"
-msgstr "Name"
+msgstr "jméno"
 
 #: models.py:53
 msgid "type"
-msgstr "Typ"
+msgstr "typ"
 
 #: models.py:55
 msgid "choices"
-msgstr "Wahlmöglichkeiten"
+msgstr "možnosti"
 
 #: models.py:56
 msgid "Comma-separated"
-msgstr "Durch Kommata getrennt"
+msgstr "oddělené čárkou"
 
 #: models.py:58
 msgid "help text"
-msgstr "Hilfstext"
+msgstr ""
 
 #: models.py:59
 msgid "Optional extra explanatory text beside the field"
-msgstr "Optionaler zusätzlicher Erklärungstext neben dem Feld"
+msgstr ""
 
 #: models.py:61
 msgid "default value"
-msgstr "Standardwert"
+msgstr "výchozí hodnota"
 
 #: models.py:62
 msgid "Optional default value of the field"
-msgstr "Optionaler Standardwert des Feldes"
+msgstr ""
 
 #: models.py:66
 msgid "item attribute"
-msgstr ""
+msgstr "Volitelný atribut"
 
 #: models.py:67
 msgid "item attributes"
-msgstr ""
+msgstr "Volitelné atributy"
 
 #: models.py:106
 msgid "value"
-msgstr ""
+msgstr "hodnota"
 
 #: models.py:107
-#, fuzzy
-#| msgid "Optional default value of the field"
 msgid "value of the field"
-msgstr "Optionaler Standardwert des Feldes"
+msgstr ""
 
 #: models.py:114 models.py:115
-#, fuzzy
-#| msgid "default value"
 msgid "attribute value"
-msgstr "Standardwert"
+msgstr "hodnota atributu"
 
 #: templates/widget/itemlist/_item.html:31
 msgid "Kč"
@@ -176,73 +172,8 @@ msgstr ""
 
 #: widget/itemlist/models.py:17
 msgid "item list"
-msgstr ""
+msgstr "seznam aut"
 
 #: widget/itemlist/models.py:18
 msgid "list of items"
-msgstr ""
-
-#~ msgid "Options"
-#~ msgstr "Optionen"
-
-#~ msgid "Save and continue editing to configure options."
-#~ msgstr "Speichern und weiter bearbeiten um die Optionen zu bearbeiten."
-
-#~ msgid "Form configuration: %s"
-#~ msgstr "Formulareinstellungen: %s"
-
-#~ msgid "Configuration"
-#~ msgstr "Einstellungen"
-
-#~ msgid "Thank you, your input has been received."
-#~ msgstr "Vielen Dank"
-
-#~ msgid "Save form submission"
-#~ msgstr "Formulardaten sichern"
-
-#~ msgid "Send e-mail"
-#~ msgstr "E-Mail versenden"
-
-#~ msgid "config"
-#~ msgstr "Konfiguration"
-
-#~ msgid "form"
-#~ msgstr "Formular"
-
-#~ msgid "forms"
-#~ msgstr "Formulare"
-
-#~ msgid "is required"
-#~ msgstr "Wird benötigt"
-
-#~ msgid "form field"
-#~ msgstr "Formularfeld"
-
-#~ msgid "form fields"
-#~ msgstr "Formularfelder"
-
-#~ msgid "You can't specify choices for %s fields"
-#~ msgstr "Sie können keine Wahlmöglichkeiten für %s-Felder angeben"
-
-#~ msgid "show form title"
-#~ msgstr "Formulartitel anzeigen"
-
-#~ msgid "success message"
-#~ msgstr "Mitteilung bei Erfolg"
-
-#~ msgid "Custom message to display after valid form is submitted"
-#~ msgstr ""
-#~ "Mitteilung, welche angezeigt wird, wenn ein gültiges Formular abgeschickt "
-#~ "wird"
-
-#~ msgid "Export submissions"
-#~ msgstr "Formulardaten exportieren"
-
-#~ msgid "form submission"
-#~ msgstr "Formulardaten"
-
-#~ msgid "form submissions"
-#~ msgstr "Formulardaten"
-
-#~ msgid "Submit"
-#~ msgstr "Abschicken"
+msgstr "seznamy aut"
