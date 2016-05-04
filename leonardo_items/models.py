@@ -24,7 +24,7 @@ class Item(models.Model):
         _('short description'), blank=True, null=True)
     image = models.ForeignKey('media.Image', blank=True, null=True)
     url = models.URLField(blank=True, null=True)
-    price = models.IntegerField(_('price'), blank=True, null=True)
+    price = models.CharField(_('price'), blank=True, null=True, max_length=100)
     sold = models.BooleanField(_('sold'), default=False)
     featured = models.BooleanField(_('featured'), default=False)
 

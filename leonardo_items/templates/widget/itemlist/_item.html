@@ -6,7 +6,7 @@
 
 <div class="valignContainer row-sm-11 text-center">
     <div class="centered">
-    	<a href="{{ item.url }}">
+    	<a href="{{ item.url }}" target="_blank">
 		{% include "widget/simpleimage/_image.html" with image=item.image size="340x340" %}
     	</a>
 	</div>
@@ -28,4 +28,4 @@
 {% endif %}
 </div>
 
-<span class="pull-right"><strong>{{ item.price }} {% trans "Kč" %}</strong></span>
+<span class="pull-right"><strong>{{ item.price }}</strong></span>

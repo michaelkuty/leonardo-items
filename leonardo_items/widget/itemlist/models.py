@@ -18,9 +18,20 @@ class ItemListWidget(ListWidget):
         verbose_name_plural = _('list of items')
 
     def get_items(self, **kwargs):
+
         if not self.sold and not self.featured:
             return Item.objects.all()
-        return Item.objects.filter(**{
-            'sold': self.sold,
-            'featured': self.featured
-        })
+
+        if self.sold:
+            items = Item.objects.filter(**{
+                'sold': self.sold,
+            })
+        else:
+            items = Item.objects.filter(**{
+                'sold': False,
+            })
+
+        if self.featured:
+            items = items.filter(featured=self.featured)
+
+        return items
