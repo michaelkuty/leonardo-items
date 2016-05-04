@@ -19,17 +19,12 @@ class ItemListWidget(ListWidget):
 
     def get_items(self, **kwargs):
 
-        if not self.sold and not self.featured:
+        if self.sold is None and self.sold is None:
             return Item.objects.all()
 
-        if self.sold:
-            items = Item.objects.filter(**{
-                'sold': self.sold,
-            })
-        else:
-            items = Item.objects.filter(**{
-                'sold': False,
-            })
+        items = Item.objects.filter(**{
+            'sold': self.sold,
+        })
 
         if self.featured:
             items = items.filter(featured=self.featured)

@@ -18,6 +18,7 @@ class ItemAttributeAdmin(admin.ModelAdmin):
 class ItemAdmin(admin.ModelAdmin):
     inlines = [AttributeValueAdmin]
     list_display = ('title',)
+    list_filter = ('sold', 'featured',)
 
 admin.site.register(models.Item, ItemAdmin)
 admin.site.register(models.Attribute, ItemAttributeAdmin)
