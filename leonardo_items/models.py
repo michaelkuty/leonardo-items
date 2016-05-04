@@ -33,7 +33,7 @@ class Item(models.Model):
         verbose_name_plural = _('items')
 
     def __str__(self):
-        return '%s' % self.title
+        return self.title
 
 FIELD_TYPES = utils.get_object(settings.LEONARDO_ITEMS_FIELD_TYPES)
 
@@ -67,7 +67,7 @@ class Attribute(models.Model):
         verbose_name_plural = _('item attributes')
 
     def __str__(self):
-        return '%s' % self.title
+        return self.title
 
     def get_choices(self):
         get_tuple = lambda value: (slugify(value.strip()), value.strip())
@@ -96,7 +96,6 @@ class Attribute(models.Model):
         return self.get_type(**kwargs)
 
 
-@python_2_unicode_compatible
 class AttributeValue(models.Model):
     item = models.ForeignKey(
         Item, related_name='attributes', verbose_name=_('item'))
@@ -105,9 +104,6 @@ class AttributeValue(models.Model):
     value = models.CharField(
         _('value'), max_length=255, blank=True,
         help_text=_('value of the field'))
-
-    def __str__(self):
-        return '%s - %s - %s ' % (self.item, self.attribute, self.value)
 
     class Meta:
         unique_together = (('item', 'attribute'),)
