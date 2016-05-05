@@ -16,6 +16,8 @@ class Default(object):
             'leonardo_items'
         ]
 
+    ordering = 1
+
     @property
     def widgets(self):
         return [
