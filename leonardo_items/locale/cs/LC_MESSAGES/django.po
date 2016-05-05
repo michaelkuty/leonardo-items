@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-04 20:17+0000\n"
+"POT-Creation-Date: 2016-05-05 17:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgstr "prodáno"
 msgid "featured"
 msgstr "doporučený"
 
-#: models.py:32 models.py:102 models.py:104
+#: models.py:32 models.py:101 models.py:103
 msgid "item"
 msgstr "auto"
 
@@ -154,21 +154,17 @@ msgstr "Volitelný atribut"
 msgid "item attributes"
 msgstr "Volitelné atributy"
 
-#: models.py:106
+#: models.py:105
 msgid "value"
 msgstr "hodnota"
 
-#: models.py:107
+#: models.py:106
 msgid "value of the field"
 msgstr ""
 
-#: models.py:114 models.py:115
+#: models.py:110 models.py:111
 msgid "attribute value"
 msgstr "hodnota atributu"
-
-#: templates/widget/itemlist/_item.html:31
-msgid "Kč"
-msgstr ""
 
 #: widget/itemlist/models.py:17
 msgid "item list"
