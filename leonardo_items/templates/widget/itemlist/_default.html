@@ -14,7 +14,7 @@
 
 <table class="table">
 <tbody>
-{% for attr in item.attributes.all %}
+{% for attr in item.get_attributes %}
   <tr class="{% cycle 'even' 'odd' %}">
       <td> <b>{{ attr.attribute.title }}</b> </td> <td> {{ attr.value }} </td>
   </tr>

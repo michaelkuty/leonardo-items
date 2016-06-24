@@ -28,6 +28,10 @@ class Item(models.Model):
     sold = models.BooleanField(_('sold'), default=False)
     featured = models.BooleanField(_('featured'), default=False)
 
+    @property
+    def get_attributes(self):
+        return self.attributes.order_by('ordering')
+
     class Meta:
         verbose_name = _('item')
         verbose_name_plural = _('items')
