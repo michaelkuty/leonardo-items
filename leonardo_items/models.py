@@ -30,7 +30,7 @@ class Item(models.Model):
 
     @property
     def get_attributes(self):
-        return self.attributes.order_by('ordering')
+        return self.attributes.order_by('attribute__ordering')
 
     class Meta:
         verbose_name = _('item')
